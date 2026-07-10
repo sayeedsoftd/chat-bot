@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Sayeed — AI Chat</title>
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<!-- Tailwind (CDN, no build step) -->
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          ink: '#0F1021',
+          surface: '#171933',
+          surface2: '#1E2145',
+          violet: '#7C6FF0',
+          violetSoft: '#9C90FF',
+          cyan: '#4ADEDE',
+          textPrimary: '#F1EFFB',
+          textMuted: '#8B88A8',
+        },
+        fontFamily: {
+          display: ['"Space Grotesk"', 'sans-serif'],
+          body: ['Inter', 'sans-serif'],
+          mono: ['"JetBrains Mono"', 'monospace'],
+        },
+      },
+    },
+  };
+</script>
+
+<!-- React + ReactDOM + Babel (CDN, no build step) -->
+<script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+<script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<div id="root"></div>
+
+<script type="text/babel" src="js/app.js"></script>
+</body>
+</html>
